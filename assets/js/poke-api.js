@@ -9,6 +9,9 @@ function convertPokeApiDetailToPokemon(pokeDetail){
     pokemon.types = types 
     pokemon.type = type;
     pokemon.photo = pokeDetail.sprites.other.home.front_default;
+    pokemon.abilities = pokeDetail.abilities;
+    pokemon.height = pokeDetail.height;
+    pokemon.weight = pokeDetail.weight;
 
     return pokemon;
 }

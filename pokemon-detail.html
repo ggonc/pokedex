@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+                integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="assets/css/pokemon-detail.css">
+        <link rel="stylesheet" href="assets/css/pokedex.css">
+    </head>
+    <body>
+        <section class="pokemon-detail">
+            <!-- NAVIGATION -->
+            <div class="navigation">
+                <button class="btn-return" onclick="back()">←</button>
+            </div>
+            
+            <!-- MAIN INFO -->
+            <div class="main-info">
+                <h1>Bulbasaur</h1>
+                <span>#1</span>
+                <ol class="types">
+                    <li class="type grass">Grass</li>
+                    <li class="type poison">Poison</li>
+                </ol>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png" 
+                    alt="Bulbasaur">
+            </div>
+
+            <!-- SECONDARY INFO -->
+            <div class="secondary-info">
+                <span>About</span>
+                <div class="about-content">
+                    <span class="about-info-title">Abilities</span>
+                    <span class="about-info-content">Overgrow, Chlorophyl</span>
+                    <span class="about-info-title">Height</span>
+                    <span class="about-info-content">7</span>
+                    <span class="about-info-title">Weight</span>
+                    <span class="about-info-content">20</span>
+                </div>
+            </div>
+        </section>
+
+        <script src="assets/js/pokemon-detail.js"></script>
+    </body>
+</html>
