@@ -44,6 +44,7 @@
     padding: 0;
     margin: 0;
     font-size: 2.2rem;
+    text-transform: capitalize;
 }
 
 .main-info span {
@@ -100,3 +101,8 @@
 .pokemon-detail .secondary-info .about-content .about-info-title {
     color: #b5b6b8;
 }
+
+.pokemon-detail .secondary-info .about-content .about-info-content {
+    text-transform: capitalize;
+}
+

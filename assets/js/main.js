@@ -44,37 +44,3 @@ loadMoreButton.addEventListener('click', () => {
 function viewPokemonDetail() {
     location.href = "pokemon-detail.html";
 }
-
-function viewPokemonDetails() {
-    //OPÇÃO 1: mudar o Body todo
-    // pegar details
-    // const newBody = `
-    //     <div>
-    //         <span>${pokemon.name}</span>
-    //         <span>#${pokemon.number}</span>
-    //         <ol class="types">
-    //             ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-    //         </ol>
-    //         <img src="${pokemon.photo}" 
-    //         alt="${pokemon.name}">
-    //         <div>
-    //             <span>About</span>
-    //             <table>
-    //                 <tbody>
-    //                     <tr>Species</tr>
-    //                     <td>Seed</td>
-    //                     <tr>Abilities</tr>
-    //                     <td>Overgrow, Chlorophyl</td>
-    //                     <tr>Gender</tr>
-    //                     <td>Male</td>
-    //                 </tbody>
-    //             </table>
-    //         </div>
-    //     </div>
-    // `;
-        
-        // body.innerHTML = newBody;
-    section.innerHTML = `
-        <div class="bodytest"></div>
-    `
-}
