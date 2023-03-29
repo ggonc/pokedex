@@ -9,14 +9,6 @@
     outline: 0;
 }
 
-.bodytest {
-    background-color: cornflowerblue;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    z-index: 100;
-}
-
 body {
     background-color: #f6f8fc;
 }

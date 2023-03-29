@@ -9,7 +9,10 @@ function convertPokeApiDetailToPokemon(pokeDetail){
     pokemon.types = types 
     pokemon.type = type;
     pokemon.photo = pokeDetail.sprites.other.home.front_default;
-    pokemon.abilities = pokeDetail.abilities;
+    const abilities = pokeDetail.abilities.map((abilitySlot) => abilitySlot.ability.name);
+    const [ability] = abilities
+    pokemon.abilities = abilities;
+    pokemon.ability = ability;
     pokemon.height = pokeDetail.height;
     pokemon.weight = pokeDetail.weight;
 
@@ -32,5 +35,3 @@ pokeApi.getPokemons = (offset = 0, limit = 10) => {
         .then((pokemonsDetails) => pokemonsDetails)
         .catch((error) => console.error(error))
 }
-
-console.log(pokeApi.getPokemonDetail)

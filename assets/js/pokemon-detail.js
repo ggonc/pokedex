@@ -2,7 +2,8 @@ function back() {
     location.href = "index.html";
 }
 
-const pokemonDetail = document.getElementById('pokemon-detail')
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get('id');
 
 function getPokemonDetail(pokemonId) {
     return fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
@@ -69,8 +70,8 @@ function loadPokemonDetail(id) {
             `;
             document.body.innerHTML += newHtml;
         })
-        .catch(error => console.error(error));
+        .catch(error => console.error(error))
 }
 
-loadPokemonDetail(1);
+loadPokemonDetail(id);
 

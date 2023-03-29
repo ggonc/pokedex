@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #7AC74C;
 }
 
 .navigation {
@@ -81,6 +80,7 @@
     padding: 4rem 2rem 2.5rem;
     height: 100%;
     background-color: white;
+    border: none;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
 }
@@ -104,5 +104,17 @@
 
 .pokemon-detail .secondary-info .about-content .about-info-content {
     text-transform: capitalize;
+}
+
+@media screen and (min-width: 415px){
+    body {
+     background-color: #f6f8fc;   
+    }
+    .pokemon-detail {
+        margin: auto;
+        height: 100vh;
+        max-width: 415px;
+        border-radius: 2rem;
+    }
 }
 
